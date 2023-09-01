@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<h3><label for="#">Enter Number </label><br></h3>
+<input type="number"  id="oddeven" > <br><br>
+<button onclick="checkup()">click here</button>
+<span id="mes"></span>
+    <script>
+       function checkup(){
+var num=document.getElementById("oddeven").value;
+if(num%2===0){
+    document.getElementById("mes").innerHTML= "Hey "+" " + num + " is the even number"
+}
+else{
+    document.getElementById("mes").innerHTML="Hey"+" " + num + " is the odd number"
+}
+}
+ </script>
+</body>
+</html>

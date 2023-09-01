@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="addcountry()">add the country</button>
+  <p class="demo"></p>
+  <script>
+    const countries=["india","ethopia","pakisthan","us"]
+   
+   let index = countries.indexOf('ethopia')  // 0
+   let x="ethopia"
+   let result=x.toUpperCase()
+   
+   if(index === -1){ 
+    function addcountry(){
+           countries[countries.length]="ethopia"
+           document.getElementById("demo").innerHTML=countries;
+    }
+       }
+        else { 
+       console.log( result)  
+       }
+   </script>
+</body>
+</html>

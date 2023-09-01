@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date object</title>
+</head>
+<body>
+    <h1>JavaScript Dates</h1>
+<h2>The getFullYear() Method</h2>
+<p id="demo"></p>
+<h2>The getMonth() Method</h2>
+<p id="demo1"></p>
+<h2>Using new Date()</h2>
+<p id="demo2"></p>
+<h2>The getDate() Method</h2>
+<p id="demo3"></p>
+<h2>The getHours() Method</h2>
+<p id="demo4"></p>
+<h2>The getMinute() Method</h2>
+<p id="demo5"></p>
+<script>
+const date = new Date();
+document.getElementById("demo").innerHTML = date.getFullYear();
+document.getElementById("demo1").innerHTML = date.getMonth();
+document.getElementById("demo2").innerHTML = date;
+document.getElementById("demo3").innerHTML = date.getDate();
+document.getElementById("demo4").innerHTML = date.getHours();
+document.getElementById("demo5").innerHTML = date.getMinutes();
+</script>
+</body>
+</html>

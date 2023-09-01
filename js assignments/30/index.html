@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" >
+        <input type="text" name="num1" placeholder="enter any number"><br><br>
+        <input type="text" name="num2" placeholder="enter any number"><br><br>
+        <input type="button" name="" value="Add" onclick="add()">
+        <input type="button" name="" value="Substract" onclick="minus()">
+        <input type="button" name="" value="Multiply" onclick="multiply()">
+        <input type="button" name="" value="Division" onclick="divide()"><br><br>
+        <input type="text" name="result" >
+    </form>
+    <script>
+function add(){
+    num1=parseInt(myform.num1.value)
+    num2=parseInt(myform.num2.value)
+    sum=num1+num2;
+    myform.result.value=sum
+}
+function minus(){
+    num1=parseInt(myform.num1.value)
+    num2=parseInt(myform.num2.value)
+    sum=num1-num2;
+    myform.result.value=sum;}
+    function multiply(){
+    num1=parseInt(myform.num1.value)
+    num2=parseInt(myform.num2.value)
+    sum=(num1*num2);
+    myform.result.value=sum;}
+    function divide(){
+    num1=parseInt(myform.num1.value)
+    num2=parseInt(myform.num2.value)
+    sum=num1/num2;
+    myform.result.value=sum;}
+    </script>
+    </script>
+</body>
+</html>

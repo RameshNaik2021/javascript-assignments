@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myGrading(score) {
+  var grades;
+
+  switch(true) {
+    case (score <= 100 && score >= 80):
+       grades = 'A';
+        break;
+    case (score <= 79 && score >= 70):
+    grades = 'B';
+         break;
+    case (score <= 69 && score >= 60):
+    grades = 'C';
+         break;
+       case (score <= 59 && score >= 50):
+       grades = 'D';
+         break;
+    case (score <= 49 && score >= 0):
+    grades = 'F';
+        break;
+
+    default:
+      return 'INVALID SCORE';
+}
+
+  return grades;
+}
+let x=[[70]];
+console.log(myGrading(x))
+
+    </script>
+    
+</body>
+</html>

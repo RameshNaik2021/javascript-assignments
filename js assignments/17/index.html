@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let month=prompt("Enter the month")
+month=month[0].toUpperCase()+month.slice(1).toLowerCase();
+switch (month) {
+        case "January":
+        case "March":
+        case "May":
+        case "July":
+        case "August":
+        case "October":
+        case "December":    
+        {
+            alert((`${month} has contains 31 days ` ))
+        }
+
+        
+        break;
+            case "April":
+            case "June":
+            case "September":
+            case "November":
+                {
+                    alert((`${month} has contains 30 days`))
+                }
+                break;
+                case "February":
+                    {
+                        alert((`${month} has contains 28 days`))
+                    }
+                    break;
+    default:
+        alert("invalid month name") 
+    
+}
+
+    </script>
+</body>
+</html>
